@@ -24,7 +24,7 @@ class EmailsController < ApplicationController
   # POST /emails
   # POST /emails.json
   def create
-    @email = Email.new(email_params)
+    @email = Email.new(email_params).tap { |x| x.status = "Pending" }
 
     respond_to do |format|
       if @email.save
