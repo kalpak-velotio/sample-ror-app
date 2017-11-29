@@ -38,6 +38,11 @@ gem 'jbuilder', '~> 2.5'
 gem 'resque', '~> 1.25', '>= 1.25.2'
 gem 'resque-scheduler', '~> 4.3', '>= 4.3.1'
 
+# Chef tools
+gem 'inspec'
+gem 'pry'
+gem 'test-kitchen'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
